@@ -24,12 +24,14 @@ textInput.addEventListener("input", () => {
       if (remainingCharWordCou < 0) {
         charLimit.classList.add("warning");
         remainingChars.textContent = 0;
+        console.log("remainingCharWordCou",remainingChars.textContent = 0);
       }
       else {
         charLimit.classList.remove("warning");
       }
     }
     if (inputValue > MAX_CHARACTER) {
+      console.log("Word count",charCount.textContent = 0);
       textInput.value = '';
       charCount.textContent = 0;
       remainingChars.textContent=MAX_CHARACTER;
